@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.about-me {
+    background-color: #C4958A; 
+    padding: 20px 0; 
+}
+
+.about-container {
+    max-width: 900px; /* Limita el ancho máximo del contenido */
+    margin: 0 auto; 
+    padding: 20px;
+    
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-me h1 {
+    font-family: 'Cormorant', serif;
+    color: #141414; 
+    margin-bottom: 10px;
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Contenedor general para la información extra */
+.container {
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+/* Estilos para la sección "Info Extra" */
+.info-extra {
+    border-radius: 8px;
+    box-sizing: border-box; /* Asegura que el padding no expanda el ancho total */
+}
+
+/* Estilos para los títulos dentro de la sección "Info Extra" */
+.info-extra h2 {
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    color: #C4958A; /* Color de los títulos de las secciones */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+/* Estilos para los párrafos dentro de la sección "Info Extra" */
+.info-extra p {
+    line-height: 1.6;
+    color: #141414;
+    margin-bottom: 20px; /* Espaciado entre párrafos */
+}
+
+/* Estilos para las subsecciones*/
+.hobbies, .favorite-genres, .mission, .contact {
+    margin: 30px 0; 
+    padding: 15px; 
+    border-left: 4px solid #C4958A;
+    background-color: #d6b5ad71; 
+    border-radius: 0 10px 10px 0; 
+}
+
+/* Los párrafos dentro de la sección "contact" */
+.contact p {
+    font-style: italic; 
+}
+

@@ -1,0 +1,482 @@
+/* Fuente agregada*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #EDE9E3;
+  height: 100%;
+}
+
+/* Estilo del header y nav */
+header {
+  background-color: #EDE9E3;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* color: #141414; */
+  /* padding: 20px 20px; */
+}
+
+nav {
+  position: sticky;
+  background-color: #EDE9E3;
+  padding: 10px 30px;
+  border-bottom: 1px solid #141414; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* Estilos del ícono del menú */
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: #141414;
+}
+
+.title {
+  text-align: center;
+  flex-grow: 1; /* título quede centrado */
+}
+.title a {
+  text-decoration: none; 
+}
+
+.title h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px; 
+  color: #141414;
+}
+
+.trazo {
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1px #141414; /* Para navegadores WebKit como Chrome */
+}
+
+.relleno {
+  font-weight: 700;
+  color: #141414;
+}
+
+/* iconos de redes sociales a la derecha */
+.social-icons {
+  display: flex;
+  gap: 10px; 
+  color: #141414;
+}
+
+.social-icons i {
+  font-size: 20px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  
+}
+
+.social-icons i:hover {
+  opacity: 0.7; 
+}
+/* --------------------------------------------------------------------------- */
+/* MENÚ DESPLEGABLE */
+.dropdown-menu {
+  display: none; /* oculto inicialmente */
+  background-color: #EDE9E3;
+  position: absolute;
+  top: 76px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0; 
+  margin: 0; 
+}
+
+.dropdown-menu ul li {
+  padding: 10px;
+  border-bottom: 1px solid #141414;
+}
+
+.dropdown-menu ul li a {
+  color: #141414;
+  text-decoration: none;
+  display: block;
+  font-size: 16px; 
+}
+
+/* Color de fondo al hacer hover */
+.dropdown-menu ul li a:hover {
+  color: #C4958A; 
+}
+
+/* Mostrar el menú cuando se despliega */
+.dropdown-menu.show {
+  display: block;
+}
+
+/* SUBMENU DE RESEÑAS */
+
+/* Estilos para el submenú dentro de Reseñas */
+.has-submenu {
+  position: relative;
+}
+
+/* Estilo para el texto */
+.has-submenu > span {
+  cursor: pointer;
+  color: #141414;
+}
+
+.has-submenu > span:hover {
+  color: #C4958A; 
+}
+
+.submenu {
+  display: none; /* Oculto inicialmente */
+  padding: 10px;  
+  width: 100%; 
+  text-align: center;
+  position: relative;
+}
+
+/* Elimina la raya en el último elemento */
+.submenu li:last-child {
+  margin: 0px;
+  border-bottom: none; 
+}
+/* --------------------------------------------------------------------------- */
+/* BIENVENIDA A LA WEB */
+.home-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #C4958A;
+}
+
+.card-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #EDE9E3;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px; 
+}
+
+.intro-text {
+  flex: 1; /* Ocupa el 50% del ancho */
+  padding: 20px; 
+  text-align: left;
+}
+
+.intro-text h2 {
+  font-family: 'Cormorant', serif;
+  font-style: italic;
+  font-size: 35px;
+  color: #141414;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  font-size: 16px;
+  color: #333;
+}
+
+.intro-image {
+  flex: 1; /* Ocupa el 50% del ancho */
+  padding: 20px; 
+}
+
+.intro-image img {
+  width: 100%;
+  height: auto;
+}
+/* --------------------------------------------------------------------------- */
+/* CARDS DE RESEÑAS*/
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 20px; 
+  margin: 20px; 
+  overflow-x: auto; /* Permitir desplazamiento horizontal si es necesario */
+}
+
+.subtitle {
+  font-family: 'Cormorant', serif;
+  font-style: italic;
+  font-size: 20px; 
+  color: #141414; 
+  margin-top: 20px;
+  text-align: center; 
+}
+
+.card {
+  background-color: #c4958ac6; 
+  border-radius: 2px; 
+  overflow: hidden; /* Ocultar el desbordamiento */
+  width: 250px; 
+  transition: transform 0.3s; /* Efecto de transición */
+  padding: 20px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  border-radius: 5px;
+}
+
+/*Efecto al pasar el mouse */
+.card:hover {
+   transform: translateY(-2px); 
+}
+
+.card img {
+  width: 30%;
+  height: auto;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  font-family: 'Cormorant', serif;
+  font-style: italic;
+  font-size: 20px;
+  
+}
+.card-content h4 {
+  font-family: 'Poppins', serif;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 10PX;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #EDE9E3; 
+  color: #141414; 
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Color del botón al pasar el mouse */
+.read-more:hover {
+  background-color: #EFD5CD; 
+}
+
+/* --------------------------------------------------------------- */
+/* CARDS DE GENEROS */
+.genres-section {
+  background-color: #C4958A;
+  padding: 40px;
+  text-align: center;
+}
+
+.genres-section h2 {
+  font-family: 'Cormorant', serif;
+  font-style: italic;
+  font-size: 1.75em; 
+}
+
+.genres-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px 0;
+}
+
+.slider-container {
+  display: flex;
+  gap: 20px;
+}
+
+.genre-card {
+  background-color: #EDE9E3;
+  border-radius: 5px;
+  padding: 20px;
+  width: 200px;
+}
+
+.genre-card h3 {
+  font-family: 'Cormorant', serif;
+  font-size: 20px;
+  color: #141414;
+  margin-bottom: 10px;
+}
+
+.genre-card p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Estilos para los íconos */
+.genre-card .icon {
+  display: inline-block; 
+  width: 50px; 
+  height: 50px; 
+  margin-bottom: 10px; 
+}
+
+.genre-card .icon img { 
+  width: 100%; 
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* FOOTER */
+footer {
+  background-color: #141414; 
+  color: #EDE9E3; 
+  padding: 20px 0px; 
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto; 
+}
+
+.footer-content p {
+  margin: 10px 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+
+.footer-links a {
+  color: #C4958A; 
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Espaciado encima de las redes sociales */
+.footer-social {
+  margin-top: 15px; 
+}
+
+.footer-social i {
+  margin: 0 10px; 
+  color: #EDE9E3; 
+  font-size: 15px; 
+  text-decoration: none;
+}
+
+/* Efecto hover en los íconos */
+.footer-social i:hover {
+  opacity: 0.7; 
+}
+
+
+/* ------------------------------------------------------------------------------- */
+/* RESPONSIVE */
+
+/* Pantallas grandes (desktops) */
+@media (min-width: 769px) {
+  .title h1 {
+    font-size: 36px; 
+  }
+
+  .menu-icon {
+    font-size: 24px;
+  }
+}
+
+/* Pantallas medianas (tablets) */
+@media (max-width: 768px) {
+
+  /* Reducir tamaño del título */
+  .title h1 {
+    font-size: 28px; 
+  }
+  .menu-icon {
+    font-size: 20px; 
+  }
+  .social-icons {
+    font-size: 15px;
+  }
+  .dropdown-menu {
+    position: static; 
+    width: auto; 
+  }
+
+  /* Cambiar a columna en tablets */
+  .intro {
+    flex-direction: column; 
+    align-items: center; 
+    padding: 10px;
+  }
+
+  /* Eliminar espaciado interno en tablets */
+  .intro-image {
+    padding: 0; 
+  }
+  /* Alinear tarjetas en columna y centrarlas*/
+  .card-container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  /* Que las tarjetas ocupen más ancho en tablets */
+  .card {
+    width: 90%; 
+    margin-bottom: 10px; 
+  }
+
+}
+
+/* --------------------------------------------------------------------------------- */
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+
+  /* Aumentar tamaño del título para móviles */
+  .title h1 {
+    font-size: 24px; 
+  }
+
+  /* Aumentar tamaño del ícono del menú */
+  .menu-icon {
+    font-size: 30px; 
+  }
+
+  .social-icons {
+    display: none;
+  }
+
+  /* Cambiar la dirección del flex para móviles */
+  nav {
+    flex-direction: column; 
+    align-items: flex-start; /* Alinear al inicio */
+  }
+
+  /* iconos de redes sociales al final */
+  .social-icons {
+    justify-content: flex-end; 
+  }
+}

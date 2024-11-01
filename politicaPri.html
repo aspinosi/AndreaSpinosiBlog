@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendingBooks</title>
+    <link rel="shortcut icon" href="img/Logo TrendingBooks circular.png">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estiloTerminosPrivacidad.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+</head>
+<body>
+
+<!-- HEADER  -->
+<header>
+  <nav>
+      <!-- Icono del menú desplegable -->
+      <div class="menu-icon" id="menu-icon">
+          &#9776; <!-- Código para el ícono del menú (tres líneas) -->
+      </div>
+
+      <!-- Título del blog en el centro como un enlace -->
+      <div class="title">
+          <h1>
+              <a href="index.html" class="blog-title">
+                  <span class="trazo">Trending</span><span class="relleno">Books</span>
+              </a>
+          </h1>
+      </div>
+
+      <!-- Redes sociales a la derecha -->
+      <div class="social-icons">
+          <i class="fi fi-brands-facebook" id="facebook-icon"></i>
+          <i class="fi fi-brands-instagram" id="instagram-icon"></i>
+          <i class="fi fi-brands-twitter-alt" id="twitter-icon"></i>
+      </div>
+  </nav>
+
+  <!-- Menú desplegable oculto inicialmente -->
+  <div class="dropdown-menu" id="dropdown-menu">
+      <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="sobremi.html">Sobre mi</a></li>
+
+          <!-- Menú desplegable de reseñas -->
+          <li class="has-submenu">
+              <span id="resenas-link">Reseñas ▾</span> <!-- Texto que indica que hay un submenú -->
+              <ul class="submenu" id="submenu-resenas">
+                  <!-- Enlaces a reseñas específicas -->
+                  <li><a href="reseña1.html">Alas de Hierro</a></li>
+                  <li><a href="reseña2.html">Asesinato para Principiantes</a></li>
+                  <li><a href="reseña3.html">Twisted Love</a></li>
+              </ul>
+          </li>
+          <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+  </div>
+</header>
+
+<main>
+    <section class="privacy-section">
+        <h2>Política de Privacidad</h2>
+        <p>En Trending Books, valoramos tu privacidad y nos comprometemos a proteger tu información personal. Esta Política de Privacidad describe cómo recopilamos, usamos y compartimos tu información cuando visitas nuestro sitio web.</p>
+        
+        <h3>Información que Recopilamos</h3>
+        <p>Podemos recopilar información personal que nos proporcionas directamente, como tu nombre, dirección de correo electrónico y cualquier otro dato que elijas compartir al registrarte o comentar en el blog. También podemos recopilar información de manera automática a través de cookies y tecnologías similares.</p>
+
+        <h3>Uso de la Información</h3>
+        <p>Utilizamos la información que recopilamos para:</p>
+        <ul>
+            <li>Mejorar nuestro sitio web y personalizar la experiencia del usuario.</li>
+            <li>Responder a tus comentarios y preguntas.</li>
+            <li>Enviar información sobre actualizaciones y contenido relevante.</li>
+            <li>Realizar análisis para entender mejor cómo nuestros usuarios interactúan con el sitio.</li>
+        </ul>
+
+        <h3>Compartir Información</h3>
+        <p>No vendemos, alquilamos ni compartimos tu información personal con terceros, excepto en las circunstancias siguientes:</p>
+        <ul>
+            <li>Con tu consentimiento.</li>
+            <li>Para cumplir con la ley o responder a un proceso legal.</li>
+            <li>Para proteger los derechos, propiedad o seguridad de Trending Books, nuestros usuarios o terceros.</li>
+        </ul>
+
+        <h3>Seguridad de la Información</h3>
+        <p>Implementamos medidas de seguridad razonables para proteger tu información personal. Sin embargo, ninguna transmisión de datos a través de Internet o método de almacenamiento electrónico puede garantizarse al 100%. Por lo tanto, no podemos garantizar su seguridad absoluta.</p>
+        <h3>Tus Derechos</h3>
+        <p>Tienes derecho a acceder, corregir o eliminar tu información personal. Si deseas ejercer estos derechos, contáctanos a través de nuestra página de contacto.</p>
+        <h3>Cambios a Esta Política de Privacidad</h3>
+        <p>Podemos actualizar esta Política de Privacidad ocasionalmente. Cualquier cambio será efectivo inmediatamente después de su publicación en el sitio web. Te recomendamos que revises periódicamente esta política para estar informado sobre cómo estamos protegiendo tu información.</p>
+        <h3>Contacto</h3>
+        <p>Si tienes preguntas sobre esta Política de Privacidad, por favor contáctanos a través de nuestra página de contacto.</p>
+    </section>
+</main>
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- FOOTER -->
+<footer>
+    <!-- Contenedor principal del contenido del footer -->
+    <div class="footer-content">
+        
+        <!-- Mensaje de derechos reservados  -->
+        <p>&copy; 2024 Blog de Recomendaciones de Libros. Todos los derechos reservados.</p>
+        
+        <!-- Enlaces de política de privacidad, términos y condiciones, y contacto -->
+        <div class="footer-links">
+            <a href="politicaPri.html">Política de Privacidad</a> |
+            <a href="terminosCondiciones.html">Términos y Condiciones</a> |
+            <a href="contacto.html">Contacto</a>
+        </div>
+        
+        <!-- Sección de iconos de redes sociales -->
+        <div class="footer-social">
+            <i class="fi fi-brands-facebook" id="facebook-icon"></i>
+            <i class="fi fi-brands-instagram" id="instagram-icon"></i>
+            <i class="fi fi-brands-twitter-alt" id="twitter-icon"></i>
+        </div>
+    </div>
+  </footer>
+  <!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+  <!-- JAVASCRIPT -->
+    <script src="js/funcion.js"></script>
+  </body>
+  </html>

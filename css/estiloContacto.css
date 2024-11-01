@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0px;
+}
+/* sección de contacto */
+.contact-section {
+    background-color: #C4958A; 
+    padding: 40px 150px; 
+    text-align: center;
+  }
+  
+  /* Título de la sección */
+  .contact-section h2 {
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 700;
+    color: #141414;
+    margin-bottom: 20px
+  }
+  ;
+  
+  /* Párrafo introductorio */
+  .contact-section p {
+    color: #141414; 
+    margin-bottom: 30px;
+  }
+  
+  /* Estilo del formulario */
+  .contact-form {
+    max-width: 700px; 
+    margin: auto; 
+    margin-top: 50px;
+    background-color: #FBFAF8; 
+    padding: 50px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /*Sombra*/
+    box-sizing: border-box; 
+  }
+  
+  /* Estilo de las etiquetas */
+  .contact-form label {
+    display: block; 
+    margin-bottom: 5px; 
+    color: #141414;
+    text-align: left;
+  }
+
+  /* Estilo de los iconos */
+  .contact-form label i {
+    margin-right: 5px; 
+    color: #EFD5CD; 
+  }
+  
+  /* Estilo de los campos de entrada */
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: calc(100% - 20px); /* Ajusta el ancho para que encaje en el formulario */
+    box-sizing: border-box; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #EDE9E3; 
+    border-radius: 4px; 
+    font-family: 'Raleway', sans-serif; 
+  }
+  
+  /* Estilo del botón de envío */
+  .contact-form button {
+    background-color: #C4958A; 
+    color: #141414; 
+    padding: 10px 30px; 
+    border: none; 
+    border-radius: 4px; 
+    font-size: 18px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; /* Transición suave para el hover */
+    align-self: flex-end; 
+  }
+  
+  /* Efecto hover para el botón */
+  .contact-form button:hover {
+    background-color: #EFD5CD; 
+  }
+  
+  /* casilla de verificación */
+  .contact-form input[type="checkbox"] {
+    margin-right: 5px; 
+  }
+
+  /* contenedor de términos */
+.terms {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 15px; 
+  }
+  .highlight {
+    color: #C4958A; 
+    text-decoration: none; 
+  }
+  
+  /* POP UP */
+  .popup {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1000; /* encima de otros elementos */
+  }
+  
+  .popup-content {
+    background-color: #FBFAF8; 
+    border-radius: 8px; 
+    padding: 40px; 
+    position: relative; 
+    text-align: center; 
+    max-width: 400px; 
+    margin: auto; 
+  }
+  
+.close {
+  position: absolute; 
+  top: 5px; 
+    right: 10px; 
+    font-size: 25px;
+    cursor: pointer; 
+    color: #C4958A; 
+  }
+
+.additional-info {
+  text-align: center;
+  padding: 40px 150px;  
+}
+
+.additional-info h2 {
+  font-family: 'Cormorant', serif;
+  font-style: italic;
+  font-size: 25px;
+  font-weight: 700;
+  color: #141414;
+  margin-bottom: 15px;
+}
+
+.additional-info p {
+    font-size: 16px;
+    color: #333;
+    margin: 15px ;
+}
+
+.additional-info p:nth-child(4n) {
+  font-family: 'Cormorant', serif;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.community-links {
+    margin-top: 20px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.community-links p {
+    font-size: 16px;
+    color: #333;
+}
+
+.community-links a {
+    color: #C4958A; 
+    text-decoration: none;
+    align-items: center;
+}
+
+.contact-image-section {
+    margin-top: 20px;
+}
+  /* -------------------------------------------------------------------------- */
+  /* Estilos para dispositivos móviles */
+  @media (max-width: 768px) {
+    .contact-section {
+      padding: 20px 10px; /* Menos espaciado en móviles */
+    }
+  
+    .contact-section h2 {
+      font-size: 24px; /* Tamaño de fuente más pequeño en móviles */
+    }
+  
+    .contact-form {
+      padding: 15px; /* Espaciado interno menor en móviles */
+    }
+    .contact-form button {
+        padding: 15px 20px; /* Aumentar el tamaño del botón */
+        font-size: 16px; /* Asegúrate de que el texto también se vea bien */
+    }
+
+    .additional-info {
+      padding: 20px 10px; /* Menos espaciado en móviles */
+  }
+
+  .additional-info h2 {
+      font-size: 20px; /* Tamaño de fuente más pequeño en móviles */
+      margin-bottom: 10px; /* Espaciado reducido */
+  }
+
+  .additional-info p {
+      font-size: 14px; /* Tamaño de fuente más pequeño en móviles */
+      margin: 10px; /* Espaciado reducido */
+  }
+
+  .community-links {
+      margin-top: 15px; /* Espaciado reducido */
+      flex-direction: column; /* Asegurarse de que siga en columna */
+      align-items: center; /* Alinear al centro */
+  }
+
+  .community-links p {
+      font-size: 14px; /* Tamaño de fuente más pequeño en móviles */
+  }
+  }

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/estiloContacto.css" />
+    <link rel="shortcut icon" href="img/Logo TrendingBooks circular.png">
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+  </head>
+  <body>
+  <!-- HEADER -->
+      <header>
+        <nav>
+            <!-- Icono del menú desplegable -->
+            <div class="menu-icon" id="menu-icon">
+                &#9776; <!-- Código para el ícono del menú (tres líneas) -->
+            </div>
+    
+            <!-- Título del blog en el centro como un enlace -->
+            <div class="title">
+                <h1>
+                    <a href="index.html" class="blog-title">
+                        <span class="trazo">Trending</span><span class="relleno">Books</span>
+                    </a>
+                </h1>
+            </div>
+    
+            <!-- Redes sociales a la derecha -->
+            <div class="social-icons">
+                <i class="fi fi-brands-facebook" id="facebook-icon"></i>
+                <i class="fi fi-brands-instagram" id="instagram-icon"></i>
+                <i class="fi fi-brands-twitter-alt" id="twitter-icon"></i>
+            </div>
+        </nav>
+    
+        <!-- Menú desplegable oculto inicialmente -->
+        <div class="dropdown-menu" id="dropdown-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobremi.html">Sobre mi</a></li>
+    
+                <!-- Menú desplegable de reseñas -->
+                <li class="has-submenu">
+                    <span id="resenas-link">Reseñas ▾</span> <!-- Texto que indica que hay un submenú -->
+                    <ul class="submenu" id="submenu-resenas">
+                        <!-- Enlaces a reseñas específicas -->
+                        <li><a href="reseña1.html">Alas de Hierro</a></li>
+                        <li><a href="reseña2.html">Asesinato para Principiantes</a></li>
+                        <li><a href="reseña3.html">Twisted Love</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+    
+<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- CONTENDIO CONTACTO -->
+    <section class="contact-section">
+      <h2>¡Queremos escuchar tu opinión!</h2>
+      <p>
+        Este formulario está diseñado para que los lectores puedan compartir sus
+        opiniones sobre los libros que hemos reseñado, así como sugerir nuevos
+        títulos, géneros o autores que les gustaría ver en el blog. Tu feedback
+        es valioso y nos ayuda a mejorar y ofrecer contenido que realmente te
+        interese.
+      </p>
+ <!-- Formulario de contacto -->
+      <form class="contact-form">
+         <!-- Campo para el nombre del usuario -->
+        <label for="name"><i class="fas fa-user"></i> Nombre:</label>
+        <input type="text" id="name" name="name" required />
+
+        <!-- Campo para el correo electrónico del usuario -->
+        <label for="email"><i class="fas fa-envelope"></i> Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <!-- Área de texto para que el usuario escriba su mensaje o sugerencia -->
+        <label for="message"><i class="fas fa-comment"></i> Consulta o Sugerencia:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <!-- Términos y condiciones -->
+        <div class="terms">
+          <input type="checkbox" id="terms" name="terms" required />
+          <label for="accept-terms">Acepto los <span class="highlight">términos y condiciones</span> y la <span class="highlight">política de privacidad</span></label>
+        </div>
+        <!-- Botón de envío del formulario -->
+        <button type="submit" class="submit-button">Enviar</button>
+      </form>
+    </section>
+<!-- -------------------------------------------------------------------------- -->
+  <!-- POP UP (aparece cuando el formulario de contacto se envía correctamente) -->
+    <div id="popup" class="popup" style="display:none;">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <p>¡Tu consulta ha sido enviada con éxito! :D  </p>
+        </div>
+      </div>
+<!-- -------------------------------------------------------------------------- -->
+<!-- Información adicional (Unete a la comunidad de lectores) -->
+    <section class="additional-info">
+      <!-- Título principal de la sección -->
+      <h2>¡Únete a Nuestra Comunidad de Lectores!</h2>
+      <p>Creemos que la lectura abre puertas a mundos nuevos y ofrece infinitas posibilidades. Cada página es una aventura esperando ser descubierta, y estamos aquí para acompañarte en cada viaje literario.</p>
+      
+      <!-- Contenedor de imagen -->
+      <div class="contact-image-section">
+        <img src="img/libros1.jpg" alt="Lectura en comunidad" width="500" height="300">
+    </div>
+      <p>¿Te gustaría discutir tus libros favoritos con otros entusiastas de la lectura? ¡Únete a nuestra comunidad en Discord!</p>
+  
+      
+      <div class="community-links">
+          <p>Síguenos en nuestras redes y participa en nuestras discusiones en <a href="https://discord.com" target="_blank">Discord</a>.</p>
+          <div class="social-icons">
+              <a href="https://discord.com" target="_blank"><i class="fi fi-brands-discord"></i></a>
+          </div>
+      </div>   
+  </section>
+<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- FOOTER -->
+<footer>
+  <!-- Contenedor principal del contenido del footer -->
+  <div class="footer-content">
+      
+      <!-- Mensaje de derechos reservados  -->
+      <p>&copy; 2024 Blog de Recomendaciones de Libros. Todos los derechos reservados.</p>
+      
+      <!-- Enlaces de política de privacidad, términos y condiciones, y contacto -->
+      <div class="footer-links">
+          <a href="politicaPri.html">Política de Privacidad</a> |
+          <a href="terminosCondiciones.html">Términos y Condiciones</a> |
+          <a href="contacto.html">Contacto</a>
+      </div>
+      
+      <!-- Sección de iconos de redes sociales -->
+      <div class="footer-social">
+          <i class="fi fi-brands-facebook" id="facebook-icon"></i>
+          <i class="fi fi-brands-instagram" id="instagram-icon"></i>
+          <i class="fi fi-brands-twitter-alt" id="twitter-icon"></i>
+      </div>
+  </div>
+</footer>
+<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- JAVASCRIPT -->
+      <script src="js/funcion.js"></script>
+      <script src="js/funcionContacto.js"></script>
+  </body>
+</html>

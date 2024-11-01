@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal de la reseña */
+.book-review {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Título del libro */
+.book-title {
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+/* Autor del libro */
+.book-author {
+    font-size: 1.1em;
+    color: #C4958A;
+    text-align: center;
+    margin: 5px 0 20px;
+}
+
+/* Recomendación y calificación */
+.recomendacion-rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recomendacion {
+    font-size: 1em;
+    color: #141414;
+    font-style: italic;
+}
+.rating {
+    font-size: 1em;
+    color: #141414;
+}
+
+/* Imagen de portada */
+.book-cover img {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 8px;
+    display: block;
+
+}
+
+/* Estilo de sinopsis como cita */
+.sinopsis {
+    position: relative;
+    padding: 10px 20px;
+    font-style: italic;
+    font-size: 1em;
+    background-color: #d6b5ad71;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.sinopsis::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #C4958A; /* Color de la línea de acento */
+    border-radius: 2px; 
+}
+
+/* Sinopsis y reseña */
+.sinopsis, .review-content {
+    margin: 20px 0;
+}
+
+.sinopsis h3, .review-content h3 {
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    color: #C4958A;
+    margin-bottom: 10px;
+}
+
+.sinopsis p, .review-content p {
+    line-height: 1.6;
+}
+
+.review-navigation {
+    display: flex;
+    justify-content: space-between; 
+    margin: 30px 0px; 
+}
+/* Ambos botones tomen espacio igual */
+.previous-review-button, .next-review-button {
+    flex: 1; 
+}
+
+/* Alinea el botón de retroceso a la izquierda */
+.previous-review-button {
+    text-align: left; 
+}
+
+/* Lo mismo que el anterior pero a la derecha */
+.next-review-button {
+    text-align: right; 
+}
+
+.review-navigation a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #C4958A; 
+    color: #fff; 
+    border-radius: 5px; 
+}
+
+/* Color al pasar el cursor */
+.review-navigation a:hover {
+    background-color: #D6B5AD; 
+}
+
+/* ----------------------------------------------------------- */
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    /*  tamaño del título  */
+    .book-title {
+        font-size: 1.5em;
+    }
+
+    /* tamaño del autor  */
+    .book-author {
+        font-size: 1em;
+    }
+
+    /* tamaño de la sinopsis y la reseña */
+    .sinopsis p, .review-content p {
+        font-size: 0.9em;
+    }
+
+    /* Estilo del contenedor de reseña */
+    .book-review {
+        padding: 15px;
+    }
+
+    /* letra mas pequeña del boton*/
+    .previous-review-button, .next-review-button {
+        font-size: 0.8em; 
+    }
+
+}
+
+

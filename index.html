@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendingBooks</title>
+    <link rel="shortcut icon" href="img/Logo TrendingBooks circular.png">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+
+</head>
+<body>
+
+<!-- HEADER  -->
+<header>
+  <nav>
+      <!-- Icono del menú desplegable -->
+      <div class="menu-icon" id="menu-icon">
+          &#9776; <!-- Código para el ícono del menú (tres líneas) -->
+      </div>
+
+      <!-- Título del blog en el centro como un enlace -->
+      <div class="title">
+          <h1>
+              <a href="#" class="blog-title">
+                  <span class="trazo">Trending</span><span class="relleno">Books</span>
+              </a>
+          </h1>
+      </div>
+
+      <!-- Redes sociales a la derecha -->
+      <div class="social-icons">
+          <i class="fi fi-brands-facebook" id="facebook-icon"></i>
+          <i class="fi fi-brands-instagram" id="instagram-icon"></i>
+          <i class="fi fi-brands-twitter-alt" id="twitter-icon"></i>
+      </div>
+  </nav>
+
+  <!-- Menú desplegable oculto inicialmente -->
+  <div class="dropdown-menu" id="dropdown-menu">
+      <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="sobremi.html">Sobre mi</a></li>
+          <!-- Menú desplegable de reseñas -->
+          <li class="has-submenu">
+              <span id="resenas-link">Reseñas ▾</span> <!-- Texto que indica que hay un submenú -->
+              <ul class="submenu" id="submenu-resenas">
+                  <!-- Enlaces a reseñas específicas -->
+                  <li><a href="reseña1.html">Alas de Hierro</a></li>
+                  <li><a href="reseña2.html">Asesinato para Principiantes</a></li>
+                  <li><a href="reseña3.html">Twisted Love</a></li>
+              </ul>
+          </li>
+          <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+  </div>
+</header>
+<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- CONTENIDO HOME  -->
+
+  <!-- La Bienvenida al blog  -->
+  <section class="home-section">
+    <div class="intro">
+      <div class="intro-text">
+        <h2>Bienvenido a nuestro Blog de Libros</h2>
+        <p>Descubre una variedad de recomendaciones de libros que alimentarán tu amor por la lectura.</p>
+      </div>
+      <div class="intro-image">
+        <img src="img/LibrosInicio.jpg" alt="Imagen de Bienvenida">
+      </div>
+    </div>
+  </section>
+
+<!-- Sección de cards, Reseñas -->
+  <section class="card-section">
+    <h3 class="subtitle">Explora las últimas reseñas de libros</h3>
+    <P> ¡no te los pierdas!</P>
+    <div class="card-container">
+        <div class="card">
+            <img src="img/AlasDeHierro.jpg" alt="Alas De Hierro">
+            <div class="card-content">
+                <h3>Alas De Hierro</h3>
+                <h4>Rebecca Yarros</h4>
+                <p>El segundo volumen de la serie Empíreo tras Alas de sangre. odos esperaban que Violet Sorrengail muriera durante su primer año en el Colegio de Guerra Basgiath, incluso ella misma...</p>
+                <a href="reseña1.html" class="read-more">Leer Más</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/AsesinatoParaPrincipiantes.jpg" alt="Asesinato para principiantes">
+            <div class="card-content">
+                <h3>Asesinato Para Principiantes </h3>
+                <h4>Holly JacksoN</h4>
+                <p>Hace cinco años, la estudiante Andie Bell fue asesinada por Sal Singh. La policía sabe que fue él. Sus compañeros también. Todo el mundo lo sabe...</p>
+                <a href="reseña2.html" class="read-more">Leer Más</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/Love.jpg" alt="Love">
+            <div class="card-content">
+                <h3>Twisted Love</h3>
+                <h4>Ana Huang</h4>
+                <p>Él tiene el corazón de hielo. Pero por ella, quemará el mundo.  Aunque Ava Chen y Alex Volkov se conocen desde hace años, él siempre se ha mostrado distante y frío...</p>
+                <a href="reseña3.html" class="read-more">Leer Más</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de cards, Generos -->
+<section class="genres-section">
+  <h2>Géneros que Amamos</h2>
+  <p>Explora los géneros que más disfrutamos y que son tendencia entre los lectores de BookTok.</p>
+
+  <div class="card-container">
+    <div class="genre-card">
+        <div class="icon">
+            <img src="img/icons/fantasia.png" alt="Fantasía" class="genre-image">
+        </div>
+        <h3>Fantasía</h3>
+        <p>Sumérgete en mundos mágicos y aventuras inolvidables.</p>
+    </div>
+    <div class="genre-card">
+        <div class="icon">
+            <img src="img/icons/romance.png" alt="Romance" class="genre-image">
+        </div>
+        <h3>Romance</h3>
+        <p>Historias de amor que tocarán tu corazón.</p>
+    </div>
+    <div class="genre-card">
+        <div class="icon">
+            <img src="img/icons/suspenso 2.png" alt="Thriller" class="genre-image">
+        </div>
+        <h3>Thriller</h3>
+        <p>Emocionantes tramas llenas de suspenso.</p>
+    </div>
+    <div class="genre-card">
+        <div class="icon">
+            <img src="img/icons/ciencia-ficcion.png" alt="Ciencia Ficción" class="genre-image">
+        </div>
+        <h3>Ciencia Ficción</h3>
+        <p>Exploraciones del futuro y realidades alternativas.</p>
+    </div>
+</div>
+</section>
+
+
+<!-- <section class="genres-section">
+  <h2>Géneros que Amamos</h2>
+  <p>Explora los géneros que más disfrutamos y que son tendencia entre los lectores de BookTok.</p>
+
+  <div class="slider">
+      <div class="slider-container">
+          <div class="genre-card">
+              <h3>Fantasía</h3>
+              <p>Sumérgete en mundos mágicos y aventuras inolvidables.</p>
+          </div>
+          <div class="genre-card">
+              <h3>Romance</h3>
+              <p>Historias de amor que tocarán tu corazón.</p>
+          </div>
+          <div class="genre-card">
+              <h3>Thriller</h3>
+              <p>Emocionantes tramas llenas de suspenso.</p>
+          </div>
+          <div class="genre-card">
+              <h3>Ciencia Ficción</h3>
+              <p>Exploraciones del futuro y realidades alternativas.</p>
+          </div>
+      </div>
+  </div>
+  <button class="prev">❮</button>
+  <button class="next">❯</button>
+</section> -->
+
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- FOOTER -->
+<footer>
+  <!-- Contenedor principal del contenido del footer -->
+  <div class="footer-content">
+      
+      <!-- Mensaje de derechos reservados  -->
+      <p>&copy; 2024 Blog de Recomendaciones de Libros. Todos los derechos reservados.</p>
+      
+      <!-- Enlaces de política de privacidad, términos y condiciones, y contacto -->
+      <div class="footer-links">
+          <a href="politicaPri.html">Política de Privacidad</a> |
+          <a href="terminosCondiciones.html">Términos y Condiciones</a> |
+          <a href="contacto.html">Contacto</a>
+      </div>
+      
+      <!-- Sección de iconos de redes sociales -->
+      <div class="footer-social">
+          <i class="fi fi-brands-facebook" id="facebook-icon"></i>
+          <i class="fi fi-brands-instagram" id="instagram-icon"></i>
+          <i class="fi fi-brands-twitter-alt" id="twitter-icon"></i>
+      </div>
+  </div>
+</footer>
+<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- JAVASCRIPT -->
+  <script src="js/funcion.js"></script>
+
+</body>
+</html>

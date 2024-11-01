@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.terms-section, .privacy-section  {
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 20px; /
+}
+
+/* Título principal */
+.terms-section h2, .privacy-section h2 {
+    font-family: 'Cormorant', serif; 
+    font-weight: 700; 
+    font-size: 2em; 
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+
+/* Subtítulos */
+.terms-section h3, .privacy-section h3 {
+    font-family: 'Cormorant', serif; 
+    font-size: 1.5em; 
+    color: #C4958A; 
+    margin: 20px 0 10px; 
+}
+
+/* Párrafos */
+.terms-section p, .privacy-section p {
+    line-height: 1.6; 
+    margin-bottom: 15px; 
+}
+
+/* Listas */
+.privacy-section ul {
+    margin: 10px 0 20px 20px;
+    color: #141414;
+}
+
+/* Elementos de lista */
+.privacy-section ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    /* Contenedor principal */
+    .terms-section, .privacy-section {
+        padding: 15px; 
+    }
+
+    /* Título principal */
+    .terms-section h2, .privacy-section h2 {
+        font-size: 1.8em; 
+    }
+
+    /* Subtítulos */
+    .terms-section h3, .privacy-section h3 {
+        font-size: 1.4em; 
+    }
+
+    /* Párrafos */
+    .terms-section p, .privacy-section p {
+        font-size: 0.95em; /* Ajusta el tamaño del texto para móviles */
+    }
+
+    /* Listas */
+    .privacy-section ul {
+        margin: 10px 0 20px 10px; /* Reduce el margen para que se ajuste mejor */
+    }
+}
+
